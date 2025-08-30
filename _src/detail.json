@@ -1,0 +1,139 @@
+{
+    "title": "Course Detail - Edukate",
+    "header": {
+        "title": "Course Detail",
+        "breadcrumb": [
+            {
+                "label": "Home",
+                "url": "/"
+            },
+            {
+                "label": "Course Detail",
+                "url": ""
+            }
+        ],
+        "search": {
+            "dropdown_label": "Courses",
+            "dropdown_items": [
+                "Courses 1",
+                "Courses 2",
+                "Courses 3"
+            ],
+            "placeholder": "Keyword"
+        }
+    },
+    "detail": {
+        "subtitle": "Course Detail",
+        "title": "Web design & development courses for beginners",
+        "image": "/assets/img/header.jpg",
+        "paragraphs": [
+            "Tempor erat elitr at rebum at at clita aliquyam consetetur. Diam dolor diam ipsum et, tempor voluptua sit consetetur sit. Aliquyam diam amet diam et eos sadipscing labore...",
+            "Sadipscing labore amet rebum est et justo gubergren. Et eirmod ipsum sit diam ut magna lorem. Nonumy vero labore lorem sanctus rebum..."
+        ],
+        "related": [
+            {
+                "image": "/assets/img/courses-1.jpg",
+                "title": "Web design & development courses for beginners",
+                "author": "Jhon Doe",
+                "rating": "4.5",
+                "reviews": "250",
+                "url": "/detail/"
+            },
+            {
+                "image": "/assets/img/courses-2.jpg",
+                "title": "Web design & development courses for beginners",
+                "author": "Jhon Doe",
+                "rating": "4.5",
+                "reviews": "250",
+                "url": "/detail/"
+            },
+            {
+                "image": "/assets/img/courses-3.jpg",
+                "title": "Web design & development courses for beginners",
+                "author": "Jhon Doe",
+                "rating": "4.5",
+                "reviews": "250",
+                "url": "/detail/"
+            }
+        ],
+        "features": [
+            {
+                "k": "Instructor",
+                "v": "John Doe"
+            },
+            {
+                "k": "Rating",
+                "v": "4.5 (250)"
+            },
+            {
+                "k": "Lectures",
+                "v": "15"
+            },
+            {
+                "k": "Duration",
+                "v": "10.00 Hrs"
+            },
+            {
+                "k": "Skill level",
+                "v": "All Level"
+            },
+            {
+                "k": "Language",
+                "v": "English"
+            }
+        ],
+        "price": "$199",
+        "categories": [
+            {
+                "name": "Web Design",
+                "count": 150
+            },
+            {
+                "name": "Web Development",
+                "count": 131
+            },
+            {
+                "name": "Online Marketing",
+                "count": 78
+            },
+            {
+                "name": "Keyword Research",
+                "count": 56
+            },
+            {
+                "name": "Email Marketing",
+                "count": 98
+            }
+        ],
+        "recent": [
+            {
+                "image": "/assets/img/courses-80x80.jpg",
+                "title": "Web design & development courses for beginners",
+                "author": "Jhon Doe",
+                "rating": "4.5",
+                "reviews": "250"
+            },
+            {
+                "image": "/assets/img/courses-80x80.jpg",
+                "title": "Web design & development courses for beginners",
+                "author": "Jhon Doe",
+                "rating": "4.5",
+                "reviews": "250"
+            },
+            {
+                "image": "/assets/img/courses-80x80.jpg",
+                "title": "Web design & development courses for beginners",
+                "author": "Jhon Doe",
+                "rating": "4.5",
+                "reviews": "250"
+            },
+            {
+                "image": "/assets/img/courses-80x80.jpg",
+                "title": "Web design & development courses for beginners",
+                "author": "Jhon Doe",
+                "rating": "4.5",
+                "reviews": "250"
+            }
+        ]
+    }
+}

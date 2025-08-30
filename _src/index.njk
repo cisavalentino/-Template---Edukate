@@ -1,0 +1,278 @@
+---
+permalink: "/"
+layout: base.njk
+---
+
+  <!-- Header Start -->
+  <div class="jumbotron jumbotron-fluid position-relative overlay-bottom" style="margin-bottom: 90px;">
+    <div class="container text-center my-5 py-5">
+      <h1 class="text-white mt-4 mb-4">{{ hero.title1 }}</h1>
+      <h1 class="text-white display-1 mb-5">{{ hero.title2 }}</h1>
+      <div class="mx-auto mb-5" style="width: 100%; max-width: 600px;">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <button class="btn btn-outline-light bg-white text-body px-4 dropdown-toggle" type="button" data-toggle="dropdown">
+              {{ hero.dropdown_label }}
+            </button>
+            <div class="dropdown-menu">
+              {% for c in hero.dropdown_items %}
+                <a class="dropdown-item" href="#">{{ c }}</a>
+              {% endfor %}
+            </div>
+          </div>
+          <input type="text" class="form-control border-light" style="padding: 30px 25px;" placeholder="{{ hero.search_placeholder }}">
+          <div class="input-group-append">
+            <button class="btn btn-secondary px-4 px-lg-5">Search</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Header End -->
+
+  <!-- About Start -->
+  <div class="container-fluid py-5">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 500px;">
+          <div class="position-relative h-100">
+            <img class="position-absolute w-100 h-100" src="{{ about.image | url }}" style="object-fit: cover;">
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="section-title position-relative mb-4">
+            <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">{{ about.subtitle }}</h6>
+            <h1 class="display-4">{{ about.title }}</h1>
+          </div>
+          <p>{{ about.text }}</p>
+          <div class="row pt-3 mx-0">
+            {% for s in about.stats %}
+              <div class="col-3 px-0">
+                <div class="bg-{{ s.bg }} text-center p-4">
+                  <h1 class="text-white" data-toggle="counter-up">{{ s.value }}</h1>
+                  <h6 class="text-uppercase text-white">{{ s.label1 }}<span class="d-block">{{ s.label2 }}</span></h6>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- About End -->
+
+  <!-- Feature Start -->
+  <div class="container-fluid bg-image" style="margin: 90px 0;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 my-5 pt-5 pb-lg-5">
+          <div class="section-title position-relative mb-4">
+            <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">{{ feature.subtitle }}</h6>
+            <h1 class="display-4">{{ feature.title }}</h1>
+          </div>
+          <p class="mb-4 pb-2">{{ feature.text }}</p>
+
+          {% for f in feature.items %}
+          <div class="d-flex mb-3">
+            <div class="btn-icon bg-{{ f.bg }} mr-4">
+              <i class="fa fa-2x fa-{{ f.icon }} text-white"></i>
+            </div>
+            <div class="mt-n1">
+              <h4>{{ f.title }}</h4>
+              <p class="m-0">{{ f.text }}</p>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+
+        <div class="col-lg-5" style="min-height: 500px;">
+          <div class="position-relative h-100">
+            <img class="position-absolute w-100 h-100" src="{{ feature.image | url }}" style="object-fit: cover;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Feature End -->
+
+  <!-- Courses Start -->
+  <div class="container-fluid px-0 py-5">
+    <div class="row mx-0 justify-content-center pt-5">
+      <div class="col-lg-6">
+        <div class="section-title text-center position-relative mb-4">
+          <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">Our Courses</h6>
+          <h1 class="display-4">Checkout New Releases Of Our Courses</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="owl-carousel courses-carousel">
+      {% for c in courses %}
+      <div class="courses-item position-relative">
+        <img class="img-fluid" src="{{ c.image | url }}" alt="">
+        <div class="courses-text">
+          <h4 class="text-center text-white px-3">{{ c.title }}</h4>
+          <div class="border-top w-100 mt-3">
+            <div class="d-flex justify-content-between p-4">
+              <span class="text-white"><i class="fa fa-user mr-2"></i>{{ c.author }}</span>
+              <span class="text-white"><i class="fa fa-star mr-2"></i>{{ c.rating }} <small>({{ c.reviews }})</small></span>
+            </div>
+          </div>
+          <div class="w-100 bg-white text-center p-4">
+            <a class="btn btn-primary" href="{{ c.detail_url | url }}">Course Detail</a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="row justify-content-center bg-image mx-0 mb-5">
+      <div class="col-lg-6 py-5">
+        <div class="bg-white p-5 my-5">
+          <h1 class="text-center mb-4">{{ signup.headline }}</h1>
+          <form>
+            <div class="form-row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input type="text" class="form-control bg-light border-0" placeholder="Your Name" style="padding: 30px 20px;">
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input type="email" class="form-control bg-light border-0" placeholder="Your Email" style="padding: 30px 20px;">
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <select class="custom-select bg-light border-0 px-3" style="height: 60px;">
+                    <option selected>{{ signup.courses_select_label }}</option>
+                    {% for c in hero.dropdown_items %}
+                      <option value="{{ loop.index }}">{{ c }}</option>
+                    {% endfor %}
+                  </select>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <button class="btn btn-primary btn-block" type="submit" style="height: 60px;">{{ signup.button }}</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- Courses End -->
+
+  <!-- Team Start -->
+  <div class="container-fluid py-5">
+    <div class="container py-5">
+      <div class="section-title text-center position-relative mb-5">
+        <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">Instructors</h6>
+        <h1 class="display-4">Meet Our Instructors</h1>
+      </div>
+      <div class="owl-carousel team-carousel position-relative" style="padding: 0 30px;">
+        {% for t in team %}
+        <div class="team-item">
+          <img class="img-fluid w-100" src="{{ t.image | url }}" alt="">
+          <div class="bg-light text-center p-4">
+            <h5 class="mb-3">{{ t.name }}</h5>
+            <p class="mb-2">{{ t.role }}</p>
+            <div class="d-flex justify-content-center">
+              {% for s in topbar.social %}
+                <a class="mx-1 p-1" href="{{ s.url }}"><i class="fab fa-{{ s.icon }}"></i></a>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  <!-- Team End -->
+
+  <!-- Testimonial Start -->
+  <div class="container-fluid bg-image py-5" style="margin: 90px 0;">
+    <div class="container py-5">
+      <div class="row align-items-center">
+        <div class="col-lg-5 mb-5 mb-lg-0">
+          <div class="section-title position-relative mb-4">
+            <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">Testimonial</h6>
+            <h1 class="display-4">What Say Our Students</h1>
+          </div>
+          <p class="m-0">Dolor est dolores et nonumy sit labore dolores est sed rebum amet...</p>
+        </div>
+        <div class="col-lg-7">
+          <div class="owl-carousel testimonial-carousel">
+            {% for ts in testimonials %}
+            <div class="bg-white p-5">
+              <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+              <p>{{ ts.text }}</p>
+              <div class="d-flex flex-shrink-0 align-items-center mt-4">
+                <img class="img-fluid mr-4" src="{{ ts.image | url }}" alt="">
+                <div>
+                  <h5>{{ ts.name }}</h5>
+                  <span>{{ ts.role }}</span>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Testimonial End -->
+
+  <!-- Contact Start -->
+  <div class="container-fluid py-5">
+    <div class="container py-5">
+      <div class="row align-items-center">
+        <div class="col-lg-5 mb-5 mb-lg-0">
+          <div class="bg-light d-flex flex-column justify-content-center px-5" style="height: 450px;">
+            {% for b in contact.blocks %}
+            <div class="d-flex align-items-center mb-5">
+              <div class="btn-icon bg-{{ b.bg }} mr-4">
+                <i class="fa fa-2x fa-{{ b.icon }} text-white"></i>
+              </div>
+              <div class="mt-n1">
+                <h4>{{ b.title }}</h4>
+                <p class="m-0">{{ b.text }}</p>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="section-title position-relative mb-4">
+            <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">{{ contact.form.need_help }}</h6>
+            <h1 class="display-4">{{ contact.form.title }}</h1>
+          </div>
+          <div class="contact-form">
+            <form>
+              <div class="row">
+                <div class="col-6 form-group">
+                  <input type="text" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Your Name" required>
+                </div>
+                <div class="col-6 form-group">
+                  <input type="email" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Subject" required>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control border-top-0 border-right-0 border-left-0 p-0" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div>
+                <button class="btn btn-primary py-3 px-5" type="submit">{{ contact.form.btn }}</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Contact End -->

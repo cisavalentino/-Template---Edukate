@@ -1,0 +1,191 @@
+---
+layout: base.njk
+pagination:
+  data: site.courses
+  size: 1
+  alias: course
+permalink: "course/{{ course.slug }}/index.html"
+eleventyComputed:
+  title: "{{ course.title }}"
+---
+
+{# ============== Helpers ============== #}
+{# Ambil base aset dari global kalau tersedia #}
+{% set assetsBase = assetsBase or site.config.dataFields.global.assetsBase or '/assets' %}
+
+{# Sidebar default dari site.json (opsional) #}
+{% set defaultSidebar = site.config.dataFields.courseDetail and site.config.dataFields.courseDetail.defaultSidebar or {} %}
+{% set sidebarFeatures = defaultSidebar.features or [
+  {k:'Lectures', v:'15'},
+  {k:'Duration', v:'10.00 Hrs'},
+  {k:'Skill level', v:'All Level'},
+  {k:'Language', v:'English'}
+] %}
+
+{# Related/Recent: loop manual dan skip slug aktif (tanpa rejectattr) #}
+{% set related = [] %}
+{% set recent = [] %}
+{% set rCount = 0 %}
+{% set recCount = 0 %}
+{% for c in site.courses %}
+  {% if c.slug != course.slug %}
+    {% if rCount < 6 %}
+      {% set related = related.concat([c]) %}
+      {% set rCount = rCount + 1 %}
+    {% endif %}
+    {% if recCount < 4 %}
+      {% set recent = recent.concat([c]) %}
+      {% set recCount = recCount + 1 %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+{# ============== Header ============== #}
+<div class="jumbotron jumbotron-fluid page-header position-relative overlay-bottom" style="margin-bottom: 90px;">
+  <div class="container text-center py-5">
+    <h1 class="text-white display-1">Course Detail</h1>
+    <div class="d-inline-flex text-white mb-5">
+      <p class="m-0 text-uppercase"><a class="text-white" href="{{ '/' | url }}">Home</a></p>
+      <i class="fa fa-angle-double-right pt-1 px-3"></i>
+      <p class="m-0 text-uppercase">Course Detail</p>
+    </div>
+    <div class="mx-auto mb-5" style="width: 100%; max-width: 600px;">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <button class="btn btn-outline-light bg-white text-body px-4 dropdown-toggle" type="button" data-toggle="dropdown">
+            Courses
+          </button>
+          <div class="dropdown-menu">
+            {% for i in site.courses %}
+              <a class="dropdown-item" href="{{ '/course/' | url }}{{ i.slug }}/">{{ i.title }}</a>
+            {% endfor %}
+          </div>
+        </div>
+        <input type="text" class="form-control border-light" style="padding: 30px 25px;" placeholder="Keyword">
+        <div class="input-group-append">
+          <button class="btn btn-secondary px-4 px-lg-5">Search</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{# ============== Detail ============== #}
+<div class="container-fluid py-5">
+  <div class="container py-5">
+    <div class="row">
+      {# Main #}
+      <div class="col-lg-8">
+        <div class="mb-5">
+          <div class="section-title position-relative mb-5">
+            <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">Course Detail</h6>
+            <h1 class="display-4">{{ course.title }}</h1>
+          </div>
+
+          <img class="img-fluid rounded w-100 mb-4" src="{{ course.image | url }}" alt="{{ course.title }}">
+
+          {# deskripsi dari data course #}
+          <p>{{ course.description }}</p>
+
+          {# teks dummy opsional biar mirip template asli #}
+          <p>Sadipscing labore amet rebum est et justo gubergren. Et eirmod ipsum sit diam ut magna lorem.
+          Nonumy vero labore lorem sanctus rebum et lorem magna kasd, stet amet magna accusam consetetur
+          eirmod. Kasd accusam sit ipsum sadipscing et at sanctus et. Ipsum sit gubergren dolores et,
+          consetetur justo invidunt at et aliquyam ut et vero clita. Diam sea no sed dolores diam nonumy,
+          gubergren sit stet no diam kasd vero.</p>
+        </div>
+
+        <h2 class="mb-3">Related Courses</h2>
+        <div class="owl-carousel related-carousel position-relative" style="padding: 0 30px;">
+          {% for r in related %}
+            <a class="courses-list-item position-relative d-block overflow-hidden mb-2" href="{{ '/course/' | url }}{{ r.slug }}/">
+              <img class="img-fluid" src="{{ r.image | url }}" alt="{{ r.title }}">
+              <div class="courses-text">
+                <h4 class="text-center text-white px-3">{{ r.title }}</h4>
+                <div class="border-top w-100 mt-3">
+                  <div class="d-flex justify-content-between p-4">
+                    <span class="text-white"><i class="fa fa-user mr-2"></i>{{ r.author }}</span>
+                    <span class="text-white"><i class="fa fa-star mr-2"></i>{{ r.rating }} <small>({{ r.reviews }})</small></span>
+                  </div>
+                </div>
+                <div class="w-100 bg-white text-center p-3">
+                  <span class="text-primary font-weight-bold">{{ r.price }}</span>
+                </div>
+              </div>
+            </a>
+          {% endfor %}
+        </div>
+      </div>
+
+      {# Sidebar #}
+      <div class="col-lg-4 mt-5 mt-lg-0">
+        <div class="bg-primary mb-5 py-3">
+          <h3 class="text-white py-3 px-4 m-0">Course Features</h3>
+
+          <div class="d-flex justify-content-between border-bottom px-4">
+            <h6 class="text-white my-3">Instructor</h6>
+            <h6 class="text-white my-3">{{ course.author }}</h6>
+          </div>
+          <div class="d-flex justify-content-between border-bottom px-4">
+            <h6 class="text-white my-3">Rating</h6>
+            <h6 class="text-white my-3">{{ course.rating }} <small>({{ course.reviews }})</small></h6>
+          </div>
+
+          {% for f in sidebarFeatures %}
+          <div class="d-flex justify-content-between border-bottom px-4{% if loop.last %} border-0{% endif %}">
+            <h6 class="text-white my-3">{{ f.k }}</h6>
+            <h6 class="text-white my-3">{{ f.v }}</h6>
+          </div>
+          {% endfor %}
+
+          <h5 class="text-white py-3 px-4 m-0">Course Price: {{ course.price }}</h5>
+          <div class="py-3 px-4">
+            <a class="btn btn-block btn-secondary py-3 px-5" href="#">Enroll Now</a>
+          </div>
+        </div>
+
+        <div class="mb-5">
+          <h2 class="mb-4">Categories</h2>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+              <a href="#" class="text-decoration-none h6 m-0">Web Design</a>
+              <span class="badge badge-primary badge-pill">150</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+              <a href="#" class="text-decoration-none h6 m-0">Web Development</a>
+              <span class="badge badge-primary badge-pill">131</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+              <a href="#" class="text-decoration-none h6 m-0">Online Marketing</a>
+              <span class="badge badge-primary badge-pill">78</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+              <a href="#" class="text-decoration-none h6 m-0">Keyword Research</a>
+              <span class="badge badge-primary badge-pill">56</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+              <a href="#" class="text-decoration-none h6 m-0">Email Marketing</a>
+              <span class="badge badge-primary badge-pill">98</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mb-5">
+          <h2 class="mb-4">Recent Courses</h2>
+          {% for rc in recent %}
+          <a class="d-flex align-items-center text-decoration-none mb-4" href="{{ '/course/' | url }}{{ rc.slug }}/">
+            <img class="img-fluid rounded" src="{{ (rc.thumb or assetsBase + '/img/courses-80x80.jpg') | url }}" alt="{{ rc.title }}" style="width:80px;height:80px;">
+            <div class="pl-3">
+              <h6>{{ rc.title }}</h6>
+              <div class="d-flex">
+                <small class="text-body mr-3"><i class="fa fa-user text-primary mr-2"></i>{{ rc.author }}</small>
+                <small class="text-body"><i class="fa fa-star text-primary mr-2"></i>{{ rc.rating }} ({{ rc.reviews }})</small>
+              </div>
+            </div>
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

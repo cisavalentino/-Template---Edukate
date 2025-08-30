@@ -1,0 +1,190 @@
+{
+    "title": "Edukate - Online Education Website Template",
+    "hero": {
+        "title1": "Learn From Home",
+        "title2": "Education Courses",
+        "dropdown_label": "Courses",
+        "dropdown_items": [
+            "Courses 1",
+            "Courses 2",
+            "Courses 3"
+        ],
+        "search_placeholder": "Keyword"
+    },
+    "about": {
+        "image": "/assets/img/about.jpg",
+        "subtitle": "About Us",
+        "title": "First Choice For Online Education Anywhere",
+        "text": "Tempor erat elitr at rebum at at clita aliquyam consetetur...",
+        "stats": [
+            {
+                "value": 123,
+                "label1": "Available",
+                "label2": "Subjects",
+                "bg": "success"
+            },
+            {
+                "value": 1234,
+                "label1": "Online",
+                "label2": "Courses",
+                "bg": "primary"
+            },
+            {
+                "value": 123,
+                "label1": "Skilled",
+                "label2": "Instructors",
+                "bg": "secondary"
+            },
+            {
+                "value": 1234,
+                "label1": "Happy",
+                "label2": "Students",
+                "bg": "warning"
+            }
+        ]
+    },
+    "feature": {
+        "image": "/assets/img/feature.jpg",
+        "subtitle": "Why Choose Us?",
+        "title": "Why You Should Start Learning with Us?",
+        "text": "Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita...",
+        "items": [
+            {
+                "icon": "graduation-cap",
+                "title": "Skilled Instructors",
+                "text": "Labore rebum duo est Sit dolore eos sit tempor eos stet...",
+                "bg": "primary"
+            },
+            {
+                "icon": "certificate",
+                "title": "International Certificate",
+                "text": "Labore rebum duo est Sit dolore eos sit tempor eos stet...",
+                "bg": "secondary"
+            },
+            {
+                "icon": "book-reader",
+                "title": "Online Classes",
+                "text": "Labore rebum duo est Sit dolore eos sit tempor eos stet...",
+                "bg": "warning"
+            }
+        ]
+    },
+    "courses": [
+        {
+            "image": "/assets/img/courses-1.jpg",
+            "title": "Web design & development courses for beginners",
+            "author": "Jhon Doe",
+            "rating": 4.5,
+            "reviews": 250,
+            "detail_url": "/detail/"
+        },
+        {
+            "image": "/assets/img/courses-2.jpg",
+            "title": "Web design & development courses for beginners",
+            "author": "Jhon Doe",
+            "rating": 4.5,
+            "reviews": 250,
+            "detail_url": "/detail/"
+        },
+        {
+            "image": "/assets/img/courses-3.jpg",
+            "title": "Web design & development courses for beginners",
+            "author": "Jhon Doe",
+            "rating": 4.5,
+            "reviews": 250,
+            "detail_url": "/detail/"
+        },
+        {
+            "image": "/assets/img/courses-4.jpg",
+            "title": "Web design & development courses for beginners",
+            "author": "Jhon Doe",
+            "rating": 4.5,
+            "reviews": 250,
+            "detail_url": "/detail/"
+        },
+        {
+            "image": "/assets/img/courses-5.jpg",
+            "title": "Web design & development courses for beginners",
+            "author": "Jhon Doe",
+            "rating": 4.5,
+            "reviews": 250,
+            "detail_url": "/detail/"
+        },
+        {
+            "image": "/assets/img/courses-6.jpg",
+            "title": "Web design & development courses for beginners",
+            "author": "Jhon Doe",
+            "rating": 4.5,
+            "reviews": 250,
+            "detail_url": "/detail/"
+        }
+    ],
+    "signup": {
+        "headline": "30% Off For New Students",
+        "courses_select_label": "Select A courses",
+        "button": "Sign Up Now"
+    },
+    "team": [
+        {
+            "image": "/assets/img/team-1.jpg",
+            "name": "Instructor Name",
+            "role": "Web Design & Development"
+        },
+        {
+            "image": "/assets/img/team-2.jpg",
+            "name": "Instructor Name",
+            "role": "Web Design & Development"
+        },
+        {
+            "image": "/assets/img/team-3.jpg",
+            "name": "Instructor Name",
+            "role": "Web Design & Development"
+        },
+        {
+            "image": "/assets/img/team-4.jpg",
+            "name": "Instructor Name",
+            "role": "Web Design & Development"
+        }
+    ],
+    "testimonials": [
+        {
+            "image": "/assets/img/testimonial-2.jpg",
+            "text": "Sed et elitr ipsum labore dolor diam, ipsum duo vero sed sit est...",
+            "name": "Student Name",
+            "role": "Web Design"
+        },
+        {
+            "image": "/assets/img/testimonial-1.jpg",
+            "text": "Sed et elitr ipsum labore dolor diam, ipsum duo vero sed sit est...",
+            "name": "Student Name",
+            "role": "Web Design"
+        }
+    ],
+    "contact": {
+        "blocks": [
+            {
+                "icon": "map-marker-alt",
+                "title": "Our Location",
+                "text": "123 Street, New York, USA",
+                "bg": "primary"
+            },
+            {
+                "icon": "phone-alt",
+                "title": "Call Us",
+                "text": "+012 345 6789",
+                "bg": "secondary"
+            },
+            {
+                "icon": "envelope",
+                "title": "Email Us",
+                "text": "info@example.com",
+                "bg": "warning"
+            }
+        ],
+        "form": {
+            "need_help": "Need Help?",
+            "title": "Send Us A Message",
+            "btn": "Send Message"
+        }
+    }
+}

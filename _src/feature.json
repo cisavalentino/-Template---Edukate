@@ -1,0 +1,154 @@
+{
+    "title": "Features - Edukate",
+    "assetsBase": "/assets",
+    "topbar": {
+        "phone": "+012 345 6789",
+        "email": "info@example.com",
+        "social": [
+            {
+                "icon": "facebook-f",
+                "url": "#"
+            },
+            {
+                "icon": "twitter",
+                "url": "#"
+            },
+            {
+                "icon": "linkedin-in",
+                "url": "#"
+            },
+            {
+                "icon": "instagram",
+                "url": "#"
+            },
+            {
+                "icon": "youtube",
+                "url": "#"
+            }
+        ]
+    },
+    "nav": {
+        "brand_html": "<i class=\"fa fa-book-reader mr-3\"></i>Edukate",
+        "links": [
+            {
+                "label": "Home",
+                "url": "/"
+            },
+            {
+                "label": "About",
+                "url": "/about/"
+            },
+            {
+                "label": "Courses",
+                "url": "/course/"
+            },
+            {
+                "label": "Pages",
+                "dropdown": [
+                    {
+                        "label": "Course Detail",
+                        "url": "/detail/"
+                    },
+                    {
+                        "label": "Our Features",
+                        "url": "/feature/",
+                        "active": true
+                    },
+                    {
+                        "label": "Instructors",
+                        "url": "/team/"
+                    },
+                    {
+                        "label": "Testimonial",
+                        "url": "/testimonial/"
+                    }
+                ]
+            },
+            {
+                "label": "Contact",
+                "url": "/contact/"
+            }
+        ],
+        "cta": {
+            "label": "Join Us",
+            "url": "#"
+        }
+    },
+    "header": {
+        "title": "Features",
+        "breadcrumb": [
+            {
+                "label": "Home",
+                "url": "/"
+            },
+            {
+                "label": "Features"
+            }
+        ],
+        "search": {
+            "dropdown_label": "Courses",
+            "dropdown_items": [
+                "Courses 1",
+                "Courses 2",
+                "Courses 3"
+            ],
+            "placeholder": "Keyword"
+        }
+    },
+    "feature": {
+        "subtitle": "Why Choose Us?",
+        "title": "Why You Should Start Learning with Us?",
+        "text": "Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum dolores amet voluptua duo dolores et sit ipsum rebum, sadipscing et erat eirmod diam kasd labore clita est. Diam sanctus gubergren sit rebum clita amet.",
+        "items": [
+            {
+                "bg": "primary",
+                "icon": "graduation-cap",
+                "title": "Skilled Instructors",
+                "text": "Labore rebum duo est Sit dolore eos sit tempor eos stet, vero vero clita magna kasd no nonumy et eos dolor magna ipsum."
+            },
+            {
+                "bg": "secondary",
+                "icon": "certificate",
+                "title": "International Certificate",
+                "text": "Labore rebum duo est Sit dolore eos sit tempor eos stet, vero vero clita magna kasd no nonumy et eos dolor magna ipsum."
+            },
+            {
+                "bg": "warning",
+                "icon": "book-reader",
+                "title": "Online Classes",
+                "text": "Labore rebum duo est Sit dolore eos sit tempor eos stet, vero vero clita magna kasd no nonumy et eos dolor magna ipsum."
+            }
+        ],
+        "image": "/assets/img/feature.jpg"
+    },
+    "footer": {
+        "brand_html": "<i class=\"fa fa-book-reader mr-3\"></i>Edukate",
+        "newsletter_btn": "Sign Up",
+        "get_in_touch": {
+            "address": "123 Street, New York, USA",
+            "phone": "+012 345 67890",
+            "email": "info@example.com",
+            "social": [
+                "twitter",
+                "facebook-f",
+                "linkedin-in",
+                "instagram"
+            ]
+        },
+        "courses": [
+            "Web Design",
+            "Apps Design",
+            "Marketing",
+            "Research",
+            "SEO"
+        ],
+        "quick_links": [
+            "Privacy Policy",
+            "Terms & Condition",
+            "Regular FAQs",
+            "Help & Support",
+            "Contact"
+        ],
+        "copyright_html": "Designed by <a class=\"text-white\" href=\"https://htmlcodex.com\">HTML Codex</a> Distributed by <a href=\"https://themewagon.com\" target=\"_blank\">ThemeWagon</a>"
+    }
+}

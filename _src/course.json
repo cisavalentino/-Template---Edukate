@@ -1,0 +1,99 @@
+{
+    "title": "Courses - Edukate",
+    "header": {
+        "title": "Courses",
+        "breadcrumb": [
+            {
+                "label": "Home",
+                "url": "/"
+            },
+            {
+                "label": "Courses",
+                "url": ""
+            }
+        ],
+        "search": {
+            "dropdown_label": "Courses",
+            "dropdown_items": [
+                "Courses 1",
+                "Courses 2",
+                "Courses 3"
+            ],
+            "placeholder": "Keyword"
+        }
+    },
+    "courses": {
+        "subtitle": "Our Courses",
+        "title": "Checkout New Releases Of Our Courses",
+        "items": [
+            {
+                "slug": "detail1",
+                "title": "Intro to Web Design",
+                "author": "John Doe",
+                "rating": "4.5",
+                "reviews": 250,
+                "image": "/assets/img/courses-1.jpg",
+                "description": "Belajar dasar-dasar desain web untuk pemula.",
+                "price": "$99"
+            },
+            {
+                "slug": "detail2",
+                "title": "Advanced CSS Techniques",
+                "author": "Jane Smith",
+                "rating": "4.7",
+                "reviews": 180,
+                "image": "/assets/img/courses-2.jpg",
+                "description": "Pelajari teknik CSS modern dan animasi.",
+                "price": "$149"
+            },
+            {
+                "slug": "detail3",
+                "title": "JavaScript for Beginners",
+                "author": "Michael Lee",
+                "rating": "4.6",
+                "reviews": 300,
+                "image": "/assets/img/courses-3.jpg",
+                "description": "Kuasai dasar pemrograman JavaScript untuk web.",
+                "price": "$120"
+            },
+            {
+                "slug": "detail4",
+                "title": "Fullstack Development Bootcamp",
+                "author": "Sarah Brown",
+                "rating": "4.8",
+                "reviews": 220,
+                "image": "/assets/img/courses-4.jpg",
+                "description": "Belajar menjadi developer fullstack dengan Node.js & React.",
+                "price": "$299"
+            },
+            {
+                "slug": "detail5",
+                "title": "UI/UX Design Principles",
+                "author": "David Wilson",
+                "rating": "4.5",
+                "reviews": 150,
+                "image": "/assets/img/courses-5.jpg",
+                "description": "Pahami prinsip desain antarmuka & pengalaman pengguna.",
+                "price": "$130"
+            },
+            {
+                "slug": "detail6",
+                "title": "Course 6",
+                "author": "David Wilson",
+                "rating": "4.5",
+                "reviews": 120,
+                "image": "/assets/img/courses-6.jpg",
+                "description": "Pahami prinsip course6 & pengalaman pengguna.",
+                "price": "$130"
+            }
+        ],
+        "pagination": {
+            "pages": [
+                1,
+                2,
+                3
+            ],
+            "active": 1
+        }
+    }
+}

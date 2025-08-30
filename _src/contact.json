@@ -1,0 +1,58 @@
+{
+    "title": "Edukate - Online Education Website Template",
+    "header": {
+        "title": "Contact",
+        "breadcrumb": [
+            {
+                "label": "Home",
+                "url": "/"
+            },
+            {
+                "label": "Contact",
+                "url": ""
+            }
+        ],
+        "search": {
+            "dropdown_label": "Courses",
+            "dropdown_items": [
+                "Courses 1",
+                "Courses 2",
+                "Courses 3"
+            ],
+            "placeholder": "Keyword"
+        }
+    },
+    "contact": {
+        "info_cards": [
+            {
+                "bg": "primary",
+                "icon": "map-marker-alt",
+                "title": "Our Location",
+                "text": "123 Street, New York, USA"
+            },
+            {
+                "bg": "secondary",
+                "icon": "phone-alt",
+                "title": "Call Us",
+                "text": "+012 345 6789"
+            },
+            {
+                "bg": "warning",
+                "icon": "envelope",
+                "title": "Email Us",
+                "text": "info@example.com"
+            }
+        ],
+        "form": {
+            "title_small": "Need Help?",
+            "title_big": "Send Us A Message",
+            "fields": {
+                "name": "Your Name",
+                "email": "Your Email",
+                "subject": "Subject",
+                "message": "Message"
+            },
+            "button": "Send Message"
+        }
+    }
+}

@@ -1,0 +1,105 @@
+{
+    "assetsBase": "/assets",
+    "topbar": {
+        "phone": "+012 345 6789",
+        "email": "info@example.com",
+        "social": [
+            {
+                "icon": "facebook-f",
+                "url": "#"
+            },
+            {
+                "icon": "twitter",
+                "url": "#"
+            },
+            {
+                "icon": "linkedin-in",
+                "url": "#"
+            },
+            {
+                "icon": "instagram",
+                "url": "#"
+            },
+            {
+                "icon": "youtube",
+                "url": "#"
+            }
+        ]
+    },
+    "nav": {
+        "brand_html": "<i class='fa fa-book-reader mr-3'></i>Edukate",
+        "links": [
+            {
+                "label": "Home",
+                "url": "/"
+            },
+            {
+                "label": "About",
+                "url": "/about/"
+            },
+            {
+                "label": "Courses",
+                "url": "/course/"
+            },
+            {
+                "label": "Pages",
+                "dropdown": [
+                    {
+                        "label": "Course Detail",
+                        "url": "/course/"
+                    },
+                    {
+                        "label": "Our Features",
+                        "url": "/feature/"
+                    },
+                    {
+                        "label": "Instructors",
+                        "url": "/team/"
+                    },
+                    {
+                        "label": "Testimonial",
+                        "url": "/testimonial/"
+                    }
+                ]
+            },
+            {
+                "label": "Contact",
+                "url": "/contact/"
+            }
+        ],
+        "cta": {
+            "label": "Join Us",
+            "url": "#"
+        }
+    },
+    "footer": {
+        "brand_html": "<i class='fa fa-book-reader mr-3'></i>Edukate",
+        "newsletter_btn": "Sign Up",
+        "get_in_touch": {
+            "address": "123 Street, New York, USA",
+            "phone": "+012 345 67890",
+            "email": "info@example.com",
+            "social": [
+                "twitter",
+                "facebook-f",
+                "linkedin-in",
+                "instagram"
+            ]
+        },
+        "courses": [
+            "Web Design",
+            "Apps Design",
+            "Marketing",
+            "Research",
+            "SEO"
+        ],
+        "quick_links": [
+            "Privacy Policy",
+            "Terms & Condition",
+            "Regular FAQs",
+            "Help & Support",
+            "Contact"
+        ],
+        "copyright_html": "Designed by <a class='text-white' href='https://htmlcodex.com'>HTML Codex</a> Distributed by <a href='https://themewagon.com' target='_blank'>ThemeWagon</a>"
+    }
+}

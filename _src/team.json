@@ -1,0 +1,58 @@
+{
+    "title": "Instructors - Edukate",
+    "header": {
+        "title": "Instructors",
+        "breadcrumb": [
+            {
+                "label": "Home",
+                "url": "/"
+            },
+            {
+                "label": "Instructors",
+                "url": ""
+            }
+        ],
+        "search": {
+            "dropdown_label": "Courses",
+            "dropdown_items": [
+                "Courses 1",
+                "Courses 2",
+                "Courses 3"
+            ],
+            "placeholder": "Keyword"
+        }
+    },
+    "team": {
+        "subtitle": "Instructors",
+        "title": "Meet Our Instructors",
+        "items": [
+            {
+                "image": "/assets/img/team-1.jpg",
+                "name": "Instructor Name",
+                "role": "Web Design & Development"
+            },
+            {
+                "image": "/assets/img/team-2.jpg",
+                "name": "Instructor Name",
+                "role": "Web Design & Development"
+            },
+            {
+                "image": "/assets/img/team-3.jpg",
+                "name": "Instructor Name",
+                "role": "Web Design & Development"
+            },
+            {
+                "image": "/assets/img/team-4.jpg",
+                "name": "Instructor Name",
+                "role": "Web Design & Development"
+            }
+        ],
+        "social": [
+            "twitter",
+            "facebook-f",
+            "linkedin-in",
+            "instagram",
+            "youtube"
+        ]
+    }
+}

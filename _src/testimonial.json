@@ -1,0 +1,43 @@
+{
+    "title": "Testimonial - Edukate",
+    "header": {
+        "title": "Testimonial",
+        "breadcrumb": [
+            {
+                "label": "Home",
+                "url": "/"
+            },
+            {
+                "label": "Testimonial",
+                "url": ""
+            }
+        ],
+        "search": {
+            "dropdown_label": "Courses",
+            "dropdown_items": [
+                "Courses 1",
+                "Courses 2",
+                "Courses 3"
+            ],
+            "placeholder": "Keyword"
+        }
+    },
+    "testimonial": {
+        "subtitle": "Testimonial",
+        "title": "What Say Our Students",
+        "items": [
+            {
+                "quote": "Sed et elitr ipsum labore dolor diam, ipsum duo vero sed sit est est ipsum eos clita est ipsum...",
+                "image": "/assets/img/testimonial-2.jpg",
+                "name": "Student Name",
+                "role": "Web Design"
+            },
+            {
+                "quote": "Sed et elitr ipsum labore dolor diam, ipsum duo vero sed sit est est ipsum eos clita est ipsum...",
+                "image": "/assets/img/testimonial-1.jpg",
+                "name": "Student Name",
+                "role": "Web Design"
+            }
+        ]
+    }
+}

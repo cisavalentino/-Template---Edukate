@@ -1,0 +1,419 @@
+{
+    "nama": "Edukate Theme 1",
+    "gambar": "https://example.com/edukate-preview.jpg",
+    "courses": [
+        {
+            "slug": "detail1",
+            "title": "Intro to Web Design",
+            "author": "John Doe",
+            "rating": "4.5",
+            "reviews": 250,
+            "image": "/assets/img/courses-1.jpg",
+            "description": "Belajar dasar-dasar desain web untuk pemula.",
+            "price": "$99"
+        },
+        {
+            "slug": "detail2",
+            "title": "Advanced CSS Techniques",
+            "author": "Jane Smith",
+            "rating": "4.7",
+            "reviews": 180,
+            "image": "/assets/img/courses-2.jpg",
+            "description": "Pelajari teknik CSS modern dan animasi.",
+            "price": "$149"
+        },
+        {
+            "slug": "detail3",
+            "title": "JavaScript for Beginners",
+            "author": "Michael Lee",
+            "rating": "4.6",
+            "reviews": 300,
+            "image": "/assets/img/courses-3.jpg",
+            "description": "Kuasai dasar pemrograman JavaScript untuk web.",
+            "price": "$120"
+        },
+        {
+            "slug": "detail4",
+            "title": "Fullstack Development Bootcamp",
+            "author": "Sarah Brown",
+            "rating": "4.8",
+            "reviews": 220,
+            "image": "/assets/img/courses-4.jpg",
+            "description": "Belajar menjadi developer fullstack dengan Node.js & React.",
+            "price": "$299"
+        },
+        {
+            "slug": "detail5",
+            "title": "UI/UX Design Principles",
+            "author": "David Wilson",
+            "rating": "4.5",
+            "reviews": 150,
+            "image": "/assets/img/courses-5.jpg",
+            "description": "Pahami prinsip desain antarmuka & pengalaman pengguna.",
+            "price": "$130"
+        },
+        {
+            "slug": "detail6",
+            "title": "Course 6",
+            "author": "David Wilson",
+            "rating": "4.5",
+            "reviews": 150,
+            "image": "/assets/img/courses-6.jpg",
+            "description": "Course 6.",
+            "price": "$110"
+        }
+    ],
+    "config": {
+        "name": "edukate-theme",
+        "version": "1.0.0",
+        "pages": [
+            "index",
+            "about",
+            "course",
+            "feature",
+            "team",
+            "testimonial",
+            "contact"
+        ],
+        "dataFields": {
+            "global": {
+                "title": "Edukate - Online Education Website Template",
+                "assetsBase": "/assets",
+                "topbar": {
+                    "phone": "+012 345 6789",
+                    "email": "info@example.com",
+                    "social": [
+                        {
+                            "icon": "facebook-f",
+                            "url": "#"
+                        },
+                        {
+                            "icon": "twitter",
+                            "url": "#"
+                        },
+                        {
+                            "icon": "linkedin-in",
+                            "url": "#"
+                        },
+                        {
+                            "icon": "instagram",
+                            "url": "#"
+                        },
+                        {
+                            "icon": "youtube",
+                            "url": "#"
+                        }
+                    ]
+                },
+                "nav": {
+                    "brand_html": "<i class='fa fa-book-reader mr-3'></i>Edukate",
+                    "links": [
+                        {
+                            "label": "Home",
+                            "url": "/"
+                        },
+                        {
+                            "label": "About",
+                            "url": "/about/"
+                        },
+                        {
+                            "label": "Courses",
+                            "url": "/course/"
+                        },
+                        {
+                            "label": "Pages",
+                            "dropdown": [
+                                {
+                                    "label": "Course Detail",
+                                    "url": "/course/detail1/"
+                                },
+                                {
+                                    "label": "Our Features",
+                                    "url": "/feature/"
+                                },
+                                {
+                                    "label": "Instructors",
+                                    "url": "/team/"
+                                },
+                                {
+                                    "label": "Testimonial",
+                                    "url": "/testimonial/"
+                                }
+                            ]
+                        },
+                        {
+                            "label": "Contact",
+                            "url": "/contact/"
+                        }
+                    ],
+                    "cta": {
+                        "label": "Join Us",
+                        "url": "#"
+                    }
+                },
+                "footer": {
+                    "brand_html": "<i class='fa fa-book-reader mr-3'></i>Edukate",
+                    "newsletter_btn": "Sign Up",
+                    "get_in_touch": {
+                        "address": "123 Street, New York, USA",
+                        "phone": "+012 345 67890",
+                        "email": "info@example.com",
+                        "social": [
+                            "twitter",
+                            "facebook-f",
+                            "linkedin-in",
+                            "instagram"
+                        ]
+                    },
+                    "courses": [
+                        "Web Design",
+                        "Apps Design",
+                        "Marketing",
+                        "Research",
+                        "SEO"
+                    ],
+                    "quick_links": [
+                        "Privacy Policy",
+                        "Terms & Condition",
+                        "Regular FAQs",
+                        "Help & Support",
+                        "Contact"
+                    ],
+                    "copyright_html": "Designed by <a class='text-white' href='https://htmlcodex.com'>HTML Codex</a> Distributed by <a href='https://themewagon.com' target='_blank'>ThemeWagon</a>"
+                }
+            },
+            "index": {
+                "layout": "index.njk",
+                "permalink": "/",
+                "title": "Edukate - Online Education Website Template",
+                "hero": {
+                    "title1": "Learn From Home",
+                    "title2": "Education Courses",
+                    "dropdown_label": "Courses",
+                    "dropdown_items": [
+                        "Courses 1",
+                        "Courses 2",
+                        "Courses 3"
+                    ],
+                    "search_placeholder": "Keyword"
+                },
+                "about": {
+                    "subtitle": "About Us",
+                    "title": "First Choice For Online Education Anywhere",
+                    "image": "/assets/img/about.jpg",
+                    "text": "Tempor erat elitr at rebum at at clita aliquyam consetetur...",
+                    "stats": [
+                        {
+                            "bg": "success",
+                            "value": "123",
+                            "label1": "Available",
+                            "label2": "Subjects"
+                        },
+                        {
+                            "bg": "primary",
+                            "value": "1234",
+                            "label1": "Online",
+                            "label2": "Courses"
+                        },
+                        {
+                            "bg": "secondary",
+                            "value": "123",
+                            "label1": "Skilled",
+                            "label2": "Instructors"
+                        },
+                        {
+                            "bg": "warning",
+                            "value": "1234",
+                            "label1": "Happy",
+                            "label2": "Students"
+                        }
+                    ]
+                },
+                "feature": {
+                    "subtitle": "Why Choose Us?",
+                    "title": "Why You Should Start Learning with Us?",
+                    "text": "Aliquyam accusam clita nonumy ipsum sit sea...",
+                    "items": [
+                        {
+                            "bg": "primary",
+                            "icon": "graduation-cap",
+                            "title": "Skilled Instructors",
+                            "text": "Labore rebum duo est..."
+                        },
+                        {
+                            "bg": "secondary",
+                            "icon": "certificate",
+                            "title": "International Certificate",
+                            "text": "Labore rebum duo est..."
+                        },
+                        {
+                            "bg": "warning",
+                            "icon": "book-reader",
+                            "title": "Online Classes",
+                            "text": "Labore rebum duo est..."
+                        }
+                    ],
+                    "image": "/assets/img/feature.jpg"
+                }
+            },
+            "about": {
+                "layout": "about.njk",
+                "permalink": "/about/",
+                "title": "About"
+            },
+            "course": {
+                "layout": "course.njk",
+                "permalink": "/course/",
+                "title": "Courses - Edukate",
+                "header": {
+                    "title": "Courses",
+                    "breadcrumb": [
+                        {
+                            "label": "Home",
+                            "url": "/"
+                        },
+                        {
+                            "label": "Courses"
+                        }
+                    ],
+                    "search": {
+                        "dropdown_label": "Courses",
+                        "dropdown_items": [
+                            "Courses 1",
+                            "Courses 2",
+                            "Courses 3"
+                        ],
+                        "placeholder": "Keyword"
+                    }
+                },
+                "list": {
+                    "subtitle": "Our Courses",
+                    "title": "Checkout New Releases Of Our Courses"
+                }
+            },
+            "courseDetail": {
+                "layout": "course/detail.njk",
+                "permalinkPattern": "course/{{ course.slug }}/index.html",
+                "eleventyComputed": {
+                    "title": "{{ course.title }}"
+                },
+                "defaultSidebar": {
+                    "features": [
+                        {
+                            "k": "Lectures",
+                            "v": "15"
+                        },
+                        {
+                            "k": "Duration",
+                            "v": "10.00 Hrs"
+                        },
+                        {
+                            "k": "Skill level",
+                            "v": "All Level"
+                        },
+                        {
+                            "k": "Language",
+                            "v": "English"
+                        }
+                    ]
+                }
+            },
+            "feature": {
+                "layout": "feature.njk",
+                "permalink": "/feature/",
+                "title": "Features"
+            },
+            "team": {
+                "layout": "team.njk",
+                "permalink": "/team/",
+                "title": "Instructors",
+                "items": [
+                    {
+                        "image": "/assets/img/team-1.jpg",
+                        "name": "Instructor Name",
+                        "role": "Web Design & Development"
+                    },
+                    {
+                        "image": "/assets/img/team-2.jpg",
+                        "name": "Instructor Name",
+                        "role": "Web Design & Development"
+                    },
+                    {
+                        "image": "/assets/img/team-3.jpg",
+                        "name": "Instructor Name",
+                        "role": "Web Design & Development"
+                    },
+                    {
+                        "image": "/assets/img/team-4.jpg",
+                        "name": "Instructor Name",
+                        "role": "Web Design & Development"
+                    }
+                ]
+            },
+            "testimonial": {
+                "layout": "testimonial.njk",
+                "permalink": "/testimonial/",
+                "title": "Testimonial",
+                "items": [
+                    {
+                        "quote": "Sed et elitr ipsum labore dolor diam...",
+                        "image": "/assets/img/testimonial-2.jpg",
+                        "name": "Student Name",
+                        "role": "Web Design"
+                    },
+                    {
+                        "quote": "Sed et elitr ipsum labore dolor diam...",
+                        "image": "/assets/img/testimonial-1.jpg",
+                        "name": "Student Name",
+                        "role": "Web Design"
+                    }
+                ]
+            },
+            "contact": {
+                "layout": "contact.njk",
+                "permalink": "/contact/",
+                "title": "Contact",
+                "info_cards": [
+                    {
+                        "bg": "primary",
+                        "icon": "map-marker-alt",
+                        "title": "Our Location",
+                        "text": "123 Street, New York, USA"
+                    },
+                    {
+                        "bg": "secondary",
+                        "icon": "phone-alt",
+                        "title": "Call Us",
+                        "text": "+012 345 6789"
+                    },
+                    {
+                        "bg": "warning",
+                        "icon": "envelope",
+                        "title": "Email Us",
+                        "text": "info@example.com"
+                    }
+                ],
+                "form": {
+                    "title_small": "Need Help?",
+                    "title_big": "Send Us A Message",
+                    "fields": {
+                        "name": "Your Name",
+                        "email": "Your Email",
+                        "subject": "Subject",
+                        "message": "Message"
+                    },
+                    "button": "Send Message"
+                }
+            }
+        },
+        "assets": [
+            "css/style.css",
+            "lib/owlcarousel/assets/owl.carousel.min.css",
+            "js/main.js"
+        ],
+        "eleventy": {
+            "input": "_src",
+            "output": "_site"
+        }
+    }
+}

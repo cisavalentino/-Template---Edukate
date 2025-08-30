@@ -1,0 +1,17 @@
+# ignore semua
+*
+
+# tapi simpan file/folder ini
+!.gitignore
+!.eleventy.js
+!package.json
+!package-lock.json
+
+# unignore _src beserta seluruh isinya (rekursif)
+!_src/
+!_src/**
+
+# tetap abaikan hasil build & dependency
+node_modules/
+_site/
+.DS_Store
